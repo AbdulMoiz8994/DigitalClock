@@ -5,7 +5,8 @@ import {DigitalClock} from './Components/TimerClock/DigitalClock'
 function App() {
   return (
     <div className="App">
-      <DigitalClock/>
+    Hello World
+    <DigitalClock/>
     </div>
   );
 }
