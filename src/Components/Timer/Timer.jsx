@@ -33,6 +33,12 @@ function Start() {
     }
     setSeconds(++second)
 }
+function Stop() {
+    if(status !== 0){
+        setStatus(2)
+        clearInterval(interv)
+    }
+}
 
     return (
         <div>
@@ -42,6 +48,7 @@ function Start() {
 
 
           <button onClick={Run}>Start</button>
+          <button onClick={Stop}>Stop</button>
         </div>
     )
 }
