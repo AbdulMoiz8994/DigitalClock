@@ -40,6 +40,14 @@ function Stop() {
     }
 }
 
+function Restart(){
+   setSeconds(0)
+   setMinutes(0)
+   setHours(0)
+   setStatus(0)
+   clearInterval(interv)
+}
+
     return (
         <div>
           <span>{hour < 10 ? `0${hour}` : hour}</span>
@@ -49,6 +57,7 @@ function Stop() {
 
           <button onClick={Run}>Start</button>
           <button onClick={Stop}>Stop</button>
+          <button onClick={Restart}>Restart</button>
         </div>
     )
 }
